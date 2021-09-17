@@ -25,6 +25,11 @@
     --bs: 0.25em 0.25em 0.75em rgba(0,0,0,.25),
     0.125em 0.125em 0.25em rgba(0,0,0,.15)
 }
+.dark-theme{
+   --clr-light: #1c1c1c;
+   --clr-dark: #fff;
+   --clr-accent: #16e0bd;
+}
 
 @media (min-width: 800px){
     :root{
@@ -161,7 +166,7 @@ margin-bottom: .25em;
 }
 
 .logo{
-    max-width: 100px;
+ max-width: 150px;
 }
 
 .nav-toggle {
@@ -281,7 +286,7 @@ margin-bottom: .25em;
     font-size: 3rem;
 }
 .my-services h3{
-    font-size: 1.5rem;
+    font-size: 1.65rem;
 }
 .my-services p{
     font-size: 1.125rem;
@@ -315,14 +320,17 @@ margin-bottom: .25em;
 @media(min-width: 800px){
     .services {
         display: flex;
-        max-width: 1000px;
+        max-width: 1500px;
         margin-left: auto;
-        margin-right: auto;
+        margin-right: auto;    
     }
-
+    .services span{
+        text-align:center;
+        margin-left: .7em;
+    }
     .service + .service {
-        margin-left: 2em;
-    }
+        margin-left: 2em;        
+    }      
 }
 
 .about-me {
@@ -374,26 +382,27 @@ margin-bottom: .25em;
 
 .section__subtitle--work{
  color: #16e0bd;
- font-family: 'Montserrat', sans-serif;
+ font-family: var(--fs-primary);
  font-weight: bold;
  margin-bottom: 2em;
 }
 /*set max-width and margin 0 auto, in case I dont want a big string*/
 .portfolio{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
+    
 }
 
 .portfolio__item{
     background: #16e0bd;
-    overflow: hidden;
+    overflow: hidden;  
 }
 
 .portfolio__item:focus{
     position: relative;
     z-index: 2;
 }
-.portfolio__img{ 
+.portfolio__img{  
     transition: transform 750ms cubic-bezier(.5, 0, .5, 1),
     opacity 250ms linear;
 }
@@ -402,6 +411,7 @@ margin-bottom: .25em;
     transform: scale(1.2);
    opacity: .8;
 }
+
 
 /* footer */
 .footer{
@@ -449,4 +459,22 @@ margin-bottom: .25em;
     padding: 0 2em 2em;
     max-width: 1000px;
     margin: 0 auto;
+}
+
+.about-me__icons{
+    margin-left: 0;
+    margin-top: -10px;
+    font-size: 3rem; 
+    color: #16e0bd;
+}
+
+
+/* NIGHT MODE */
+.dark-theme .section__title--services::after{
+    background: white;
+}
+#moonicon{
+    cursor: pointer;
+    margin-top: -.3em;
+    max-width: 40px;
 }
