@@ -523,3 +523,9 @@ grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     flex-direction: row;
     justify-content: space-between;
 }
+
+@media (min-width: 360px) and (max-width: 768px) {
+    .portfolio-btn .btn{
+        padding: .5em 1.5em; 
+    }
+    }
