@@ -317,8 +317,7 @@ margin-bottom: .25em;
     margin: 0 auto;
 }
 
-
-@media(min-width: 900px){
+@media(min-width: 800px){
     .services {
         display: flex;
         max-width: 1500px;
@@ -327,7 +326,7 @@ margin-bottom: .25em;
     }
     .services span{
         text-align:center;
-        margin-left: .9em;
+        margin-left: .7em;
     }
     .service + .service {
         margin-left: 2em;        
@@ -387,23 +386,60 @@ margin-bottom: .25em;
  font-weight: bold;
  margin-bottom: 2em;
 }
-/*set max-width and margin 0 auto, in case I dont want a big string*/
+/*set max-width and margin 0 auto, in case I dont want a big string
 .portfolio{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
+    gap: 0.2em;
     
+}
+*/
+
+.portfolio{
+display: grid;
+gap: 0.5em;
+grid-template-rows: auto;
+grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 
 .portfolio__item{
     background: #16e0bd;
-    overflow: hidden;  
+    overflow:hidden;  
+}
+
+.portfolio__item>img{
+    object-fit:cover;
+    width: 100%;
+    height: 100%;
+}
+/*
+.portfolio__item:first-child{
+    padding: 1em 3em;
+    max-width: 100%;
+    margin: 0 auto;
+    grid-column: 1/2;
+    grid-row: 1 / 2;
+}
+*/
+
+.portfolio-item-individual{
+    padding: 1em 3em;
+    margin: 0 auto;
+}
+.portfolio-item-individual>img{
+    object-fit: cover;
+    max-width: 120px;
+    margin: 0 auto;
 }
 
 .portfolio__item:focus{
     position: relative;
     z-index: 2;
+    max-width: 1000px;
+    margin: 0 auto;
 }
 .portfolio__img{  
+    width: 100%;
     transition: transform 750ms cubic-bezier(.5, 0, .5, 1),
     opacity 250ms linear;
 }
@@ -412,6 +448,8 @@ margin-bottom: .25em;
     transform: scale(1.2);
    opacity: .8;
 }
+
+
 
 
 /* footer */
@@ -478,4 +516,10 @@ margin-bottom: .25em;
     cursor: pointer;
     margin-top: -.3em;
     max-width: 40px;
+}
+
+.portfolio-btn{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
