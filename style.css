@@ -15,6 +15,7 @@
     --clr-light: #fff;
     --clr-dark: #303030;
     --clr-accent: #16e0bd;
+    --clr-accent: #ffa701;
     
     --fs-h1: 3.1rem;
     --fs-h2: 2.25rem;
@@ -29,6 +30,7 @@
    --clr-light: #1c1c1c;
    --clr-dark: #fff;
    --clr-accent: #16e0bd;
+   --clr-accent: #ffa701;
 }
 
 @media (min-width: 800px){
@@ -381,7 +383,7 @@ margin-bottom: .25em;
 }
 
 .section__subtitle--work{
- color: #16e0bd;
+ color: #ffa701;
  font-family: var(--fs-primary);
  font-weight: bold;
  margin-bottom: 2em;
@@ -403,7 +405,7 @@ grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 
 .portfolio__item{
-    background: #16e0bd;
+    background: #ffa701;
     overflow:hidden;  
 }
 
@@ -455,7 +457,7 @@ grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 /* footer */
 .footer{
     background: #111;
-    color: #16e0bd;
+    color: #ffa701;
     text-align: center;
     padding: 1.5em 0;
     font-size: var(--fs-h3);
@@ -504,7 +506,7 @@ grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     margin-left: 0;
     margin-top: -10px;
     font-size: 3rem; 
-    color: #16e0bd;
+    color: #ffa701;
 }
 
 
@@ -525,7 +527,7 @@ grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 
 @media (min-width: 360px) and (max-width: 768px) {
-    .portfolio-btn .btn{
-        padding: .5em 1.5em; 
-    }
-    }
+.portfolio-btn .btn{
+    padding: .5em 1.5em; 
+}
+}
