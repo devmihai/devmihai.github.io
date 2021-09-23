@@ -39,7 +39,7 @@ if(document.body.classList.contains("dark-theme")){
     localStorage.setItem("theme","light");
 }
 }
-*/ GSAP /*
+/* GSAP */
 let timeline = new TimelineMax();
 timeline.from(".intro",1, {scale:0.5, delay:0.5, ease: Bounce.easeOut})
 timeline.from("p", 1, {opacity:0, scale:0})
