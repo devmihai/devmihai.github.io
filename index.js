@@ -42,8 +42,8 @@ if(document.body.classList.contains("dark-theme")){
 /* GSAP */
 let timeline = new TimelineMax();
 timeline.from(".intro", 2, {scale:0, ease: Bounce.easeOut});
-timeline.from("p", .5, {opacity:0, scale:0.5, rotation:720});
 timeline.from("h1" , 1.2, {opacity: 0, scale:2, ease: Back.easeOut.config(7.5)});
+timeline.from("p", .5, {opacity:0, scale:0.5});
 timeline.from(".nav-toggle", 2.2, {y:-100,scale: 1.5, ease: "elastic.out(0.4, 0.1)"});
 //timeline.from(".nav-toggle", 4, {y:-100, ease: "elastic.out(1, 0.3)"});
 
