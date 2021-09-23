@@ -39,3 +39,11 @@ if(document.body.classList.contains("dark-theme")){
     localStorage.setItem("theme","light");
 }
 }
+*/ GSAP /*
+let timeline = new TimelineMax();
+timeline.from(".intro",1, {scale:0.5, delay:0.5, ease: Bounce.easeOut})
+timeline.from("p", 1, {opacity:0, scale:0})
+timeline.from("h1" , 1.5, {opacity: 0, scale:2, ease: Back.easeOut.config(7.5)})
+timeline.from(".nav-toggle", 4, {y:-50,scale:1.5, ease: "elastic.out(1, 0.1).config(7.5)"})
+//timeline.from(".nav-toggle", 4, {y:-100, ease: "elastic.out(1, 0.3)"})
+
