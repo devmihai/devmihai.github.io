@@ -1,6 +1,8 @@
 # devmihai.github.io
 My personal portfolio!
 
+
+
 Built with HTML, CSS, JavaScript, GSAP.<br>
 Here you can check my latest finished projects.<br>
 At the top, on the left side of the page, is a dark mode that you can enable by clicking. <br>
