@@ -47,3 +47,24 @@ timeline.from("p", .5, {opacity:0, scale:0.5});
 timeline.from(".nav-toggle", 2.2, {y:-100,scale: 1.5, ease: "elastic.out(0.4, 0.1)"});
 //timeline.from(".nav-toggle", 4, {y:-100, ease: "elastic.out(1, 0.3)"});
 
+gsap.registerPlugin(ScrollTrigger);
+function init() {
+    gsap.fromTo("#services",{opacity:0},{duration: 3, opacity:1, scrollTrigger: {
+    trigger: "#services",
+    start:"top 75%",
+    end: "bottom bottom",
+    scrub: 3,
+    toggleActions:"reverse reverse play play"
+    }}),
+    gsap.fromTo("#about",{opacity:0},{duration:3 ,delay:1, opacity:1, scrollTrigger: {
+        trigger: "#about",
+        start:"top 75%",
+        end: "center bottom",
+        scrub: 3,
+        toggleActions:"reverse play play play"
+}})
+};
+
+window.addEventListener("load", function(){
+    init()
+});
