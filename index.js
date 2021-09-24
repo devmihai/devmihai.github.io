@@ -62,7 +62,14 @@ function init() {
         end: "center bottom",
         scrub: 3,
         toggleActions:"reverse play play play"
-}})
+}}),
+    gsap.fromTo("#work",{opacity:0},{duration:2 , opacity:1, scrollTrigger: {
+    trigger: "#work",
+    start:"top 75%",
+    end: "center bottom",
+    scrub: 3,
+    toggleActions:"reverse play play play"
+}})    
 };
 
 window.addEventListener("load", function(){
