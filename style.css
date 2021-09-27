@@ -481,7 +481,7 @@ grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     list-style-type: none;
     display: flex;
     justify-content: center;
-    margin: 2em 0 0;
+    margin: 1em 0 0;
     padding: 0;
 }
 
