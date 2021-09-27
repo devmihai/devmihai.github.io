@@ -388,14 +388,6 @@ margin-bottom: .25em;
  font-weight: bold;
  margin-bottom: 2em;
 }
-/*set max-width and margin 0 auto, in case I dont want a big string
-.portfolio{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
-    gap: 0.2em;
-    
-}
-*/
 
 .portfolio{
 display: grid;
@@ -414,15 +406,6 @@ grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     width: 100%;
     height: 100%;
 }
-/*
-.portfolio__item:first-child{
-    padding: 1em 3em;
-    max-width: 100%;
-    margin: 0 auto;
-    grid-column: 1/2;
-    grid-row: 1 / 2;
-}
-*/
 
 .portfolio-item-individual{
     padding: 1em 3em;
@@ -481,7 +464,7 @@ grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     list-style-type: none;
     display: flex;
     justify-content: center;
-    margin: 1em 0 0;
+    margin: .5em 0 0;
     padding: 0;
 }
 
