@@ -82,7 +82,7 @@ span { font-weight: var(--fw-bold);}
 }
 .btn:hover,
 .btn:focus{
-    transform: scale(1.2);
+    transform: scale(1.1);
 }
 
 /* Typography */
