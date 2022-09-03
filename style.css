@@ -78,7 +78,7 @@ span { font-weight: var(--fw-bold);}
     font-size: .8rem; 
     font-weight: bold;
     letter-spacing: 1px;
-    transition: transform 300ms ease-in-out
+    transition: transform 300ms ease-in-out;
 }
 .btn:hover,
 .btn:focus{
