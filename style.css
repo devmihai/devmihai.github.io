@@ -397,7 +397,7 @@ grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 
 .portfolio__item{
-    background: #ffa701;
+    background: #1c1c1c;
     overflow:hidden;  
 }
 
