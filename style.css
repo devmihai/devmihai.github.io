@@ -78,7 +78,7 @@ span { font-weight: var(--fw-bold);}
     font-size: .8rem; 
     font-weight: bold;
     letter-spacing: 1px;
-    transition: transform 300ms ease-in-out;
+    transition: transform 300ms ease-in-out
 }
 .btn:hover,
 .btn:focus{
@@ -324,7 +324,8 @@ margin-bottom: .25em;
         display: flex;
         max-width: 1500px;
         margin-left: auto;
-        margin-right: auto;    
+        margin-right: auto;
+        flex-basis: 1;    
     }
     .services span{
         text-align:center;
@@ -346,7 +347,7 @@ margin-bottom: .25em;
 
 @media (min-width: 600px){
    .about-me {
-     display:grid;
+        display:grid;
     grid-template-columns:1fr 200px;
     grid-template-areas : 
     "title img"
@@ -402,7 +403,7 @@ grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 
 .portfolio__item>img{
-    object-fit:cover;
+    object-fit: cover;
     width: 100%;
     height: 100%;
 }
@@ -411,7 +412,7 @@ grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     .portfolio{
         width:100%;
         height:100%;
-        align-items: baseline;
+        align-items: first baseline;
     }
 
     #iflex3{
@@ -427,6 +428,63 @@ grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     }
 }
 
+
+/*
+@media (min-width: 990px){
+    .portfolio{
+    max-width: 100vw;
+    max-height: 100vh;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-content: space-evenly;
+    align-items: stretch;
+    }
+
+
+.portfolio__item{
+    display: flex;
+    flex-basis:100%;
+    justify-content: space-evenly;
+    align-content: space-evenly;
+    align-items: stretch;
+    
+}
+
+.portfolio__item>img{
+ width: 100%;
+ height: 100%;
+ object-fit: contain;
+}
+
+#flex1{
+ object-fit: cover;
+ height:97.5%;   
+ align-self: flex-end;
+}
+
+#iflex2{
+    max-width: 100%;
+}
+
+#iflex3{
+    object-fit: contain;
+    height: 100%;
+    width:100%;
+    align-self: center;
+    flex-grow: 100%;
+}
+}
+
+@media (min-width:680px) and (max-width:990px ){
+    #iflex3{
+        object-fit: contain;
+        display: inline-block;
+        align-self: center;
+        flex: 100%;
+    }
+}
+*/
 .portfolio-item-individual{
     padding: 1em 3em;
     margin: 0 auto;
@@ -450,7 +508,7 @@ grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 .portfolio__img:hover,
 .portfolio__item:focus .portfolio__img {
-    transform: scale(1.1);
+    transform: scale(1.06);
    opacity: .8;
 }
 
@@ -503,6 +561,10 @@ grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     padding: 0 2em 2em;
     max-width: 1200px;
     margin: 0 auto;
+}
+
+.portfolio-item-individual > p {
+  line-height: 1em;
 }
 
 .about-me__icons{
