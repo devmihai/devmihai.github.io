@@ -411,7 +411,7 @@ grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     .portfolio{
         width:100%;
         height:100%;
-        align-items: first baseline;
+        align-items: baseline;
     }
 
     #iflex3{
